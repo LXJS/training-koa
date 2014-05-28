@@ -1,0 +1,24 @@
+{
+  "name": "training-koa",
+  "description": "Koa learning workshop",
+  "version": "0.0.0",
+  "author": {
+    "name": "Jonathan Ong",
+    "email": "me@jongleberry.com",
+    "url": "http://jongleberry.com",
+    "twitter": "https://twitter.com/jongleberry"
+  },
+  "repository": "LXJS/training-koa",
+  "license": "MIT",
+  "dependencies": {
+    "co": "3",
+    "mz": "0",
+    "koa": "0",
+    "co-body": "0",
+    "koa-csrf": "1",
+    "koa-session": "2",
+    "jade": "1",
+    "supertest": "0",
+    "escape-html": "1"
+  }
+}
