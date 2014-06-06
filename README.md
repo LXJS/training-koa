@@ -75,10 +75,46 @@ The first 20-30 minutes of the workshop will be a presentation on http://cdn.raw
 After which, the hands-on workshop will begin.
 Any technical questions asked from the point on will be shown to the entire workshop.
 
-## 27 Jun 17:30h Participants
+## 27 jun - 17:30h Participants
 
-`TBA`
+- Abel Soares - [abelsoares](https://github.com/abelsoares)
+- André Santos - [andrefs](https://github.com/andrefs)
+- Bruno Abrantes - [inf0rmer](https://github.com/inf0rmer)
+- David Cruz - [dcruz](https://github.com/dcruz)
+- Franz Enzenhofer - [franzenzenhofer](https://github.com/franzenzenhofer)
+- Frederic Hemberger - [fhemberger](https://github.com/fhemberger)
+- Hugo Rodrigues - [hugominas](https://github.com/hugominas)
+- J Oates - [joates](https://github.com/joates)
+- João Jerónimo - [joaojeronimo](https://github.com/joaojeronimo)
+- João Reis
+- Jorge Monteiro - [jorgemonteiro](https://github.com/jorgemonteiro)
+- Luis Naia
+- Mario Nzualo - [marionzualo](https://github.com/marionzualo)
+- Sebastian Golasch - [asciidisco](https://github.com/asciidisco)
+- Tom Cartwright - [tomcartwrightuk](https://github.com/tomcartwrightuk)
 
-## 28 Jun 14:30h Participants
+## 28 jun - 14:30h Participants
 
-`TBA`
+- André Cruz - [satazor](https://github.com/satazor)
+- Bruno Azevedo - [azevedo-252](https://github.com/azevedo-252)
+- Charlie Robbins - [indexzero](https://github.com/indexzero)
+- Daniel da Silva - [danielfdsilva](https://github.com/danielfdsilva)
+- Dominykas Blyžė - [dymonaz](https://github.com/dymonaz)
+- George Shank - [taterbase](https://github.com/taterbase)
+- Joaquim Serafim - [joaquimserafim](https://github.com/joaquimserafim)
+- Jonathan Lipps - [jlipps](https://github.com/jlipps)
+- Jorge Dias - [diasjorge](https://github.com/diasjorge)
+- Luis Confraria - [luisbug](https://github.com/luisbug)
+- Luís Ferreira - [zamith](https://github.com/zamith)
+- Marcelo Conceição - [marcelombc](https://github.com/marcelombc)
+- Marco Pantaleo - [peeofive](https://github.com/peeofive)
+- Matteo Collina - [mcollina](https://github.com/mcollina)
+- Matthias Knoll - [kohlikohl](https://github.com/kohlikohl)
+- Miguel Serrano - [miguelvps](https://github.com/miguelvps)
+- Miguel Pereira
+- Nuno Costa - [naflcosta](https://github.com/naflcosta)
+- Paulo Vieira - [paulovieira](https://github.com/paulovieira)
+- Ricardo Malta - [ricmalta](https://github.com/ricmalta)
+- Ricardo Soares - [rsoares](https://github.com/rsoares)
+- Ricardo Quintas - [rdquintas](https://github.com/rdquintas)
+- Tracy Hinds - [hackygolucky](https://github.com/hackygolucky)
