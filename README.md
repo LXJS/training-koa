@@ -88,7 +88,7 @@ Any technical questions asked from the point on will be shown to the entire work
 - João Jerónimo - [joaojeronimo](https://github.com/joaojeronimo)
 - João Reis
 - Jorge Monteiro - [jorgemonteiro](https://github.com/jorgemonteiro)
-- Luis Naia
+- Luis Naia - [darkbls](https://github.com/darkbls)
 - Mario Nzualo - [marionzualo](https://github.com/marionzualo)
 - Sebastian Golasch - [asciidisco](https://github.com/asciidisco)
 - Tom Cartwright - [tomcartwrightuk](https://github.com/tomcartwrightuk)
