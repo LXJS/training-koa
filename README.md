@@ -111,7 +111,7 @@ Any technical questions asked from the point on will be shown to the entire work
 - Matteo Collina - [mcollina](https://github.com/mcollina)
 - Matthias Knoll - [kohlikohl](https://github.com/kohlikohl)
 - Miguel Serrano - [miguelvps](https://github.com/miguelvps)
-- Miguel Pereira
+- Miguel Pereira - [miguelampereira](https://github.com/miguelampereira)
 - Nuno Costa - [naflcosta](https://github.com/naflcosta)
 - Paulo Vieira - [paulovieira](https://github.com/paulovieira)
 - Ricardo Malta - [ricmalta](https://github.com/ricmalta)
