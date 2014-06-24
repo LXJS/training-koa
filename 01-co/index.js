@@ -9,7 +9,7 @@ var fs = require('fs');
  * Hint: you can return a yieldable.
  */
 
-exports.stats = function () {
+exports.stat = function () {
 
 };
 
