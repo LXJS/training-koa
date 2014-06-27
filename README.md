@@ -95,6 +95,7 @@ Any technical questions asked from the point on will be shown to the entire work
 - Daniel Wellman - [danwellman](https://github.com/danwellman)
 - Matthias Knoll - [kohlikohl](https://github.com/kohlikohl)
 - Jorge Dias - [diasjorge](https://github.com/diasjorge)
+- Alejandro Dev - [ainformatico](https://github.com/ainformatico)
 - Ricardo Quintas - [rdquintas](https://github.com/rdquintas)
 - Matteo Collina - [mcollina](https://github.com/mcollina)
 - Tom Ashworth - [phuu](https://github.com/phuu)
