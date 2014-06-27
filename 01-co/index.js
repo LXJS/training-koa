@@ -9,7 +9,7 @@ var fs = require('fs');
  * Hint: you can return a yieldable.
  */
 
-exports.stats = function () {
+exports.stat = function (filename) {
 
 };
 
@@ -18,9 +18,12 @@ exports.stats = function () {
  *
  *   var exists = yield fs.exists(__filename);
  *
+ * Note that `fs.exists()` simply wraps `fs.stat()`.
+ * If `fs.stat()` does not return an error, then the file exists!
+ *
  * Hint: don't use fs.exists() as it's not a proper callback.
  */
 
-exports.exists = function () {
+exports.exists = function (filename) {
 
 };
