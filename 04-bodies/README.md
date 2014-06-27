@@ -11,9 +11,26 @@ If the body is not treated as the first three,
 Koa will assume that you want to send a JSON response,
 treating REST APIs as first-class citizens.
 
+```js
+app.use(function* (next) {
+  this.response.body = {
+    message: 'this will be sent as a JSON response!'
+  }
+})
+```
+
 When setting a stream as a body,
 Koa will automatically add any error handlers so you don't have to worry about error handling.
 
+```js
+var fs = require('fs');
+
+app.use(function* (next) {
+  this.response.body = fs.createReadStream('some_file.txt');
+  // koa will automatically handle errors and leaks
+})
+```
+
 ## Exercise
 
-Let's create an app that returns a stream when the client requests `/stream` and a JSON body when the client requests `/json`.
+Create an app that returns a stream when the client requests `/stream` and a JSON body when the client requests `/json`.

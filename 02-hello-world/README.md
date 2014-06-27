@@ -22,7 +22,7 @@ In Express, there is a shortcut:
 res.send('hello world');
 ```
 
-However, in Koa, we use a getter:
+However, in Koa, we use getter/setter:
 
 ```js
 app.use(function* () {

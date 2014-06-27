@@ -1,5 +1,5 @@
 
-Both a request and a response could have content headers.
+Both a request and a response could have various content headers.
 These are:
 
 - `Content-Type`
@@ -23,6 +23,8 @@ Thus, Koa has `this.request.is()` for you:
 this.request.is('image/*') // => image/png
 this.request.is('text') // => text or false
 ```
+
+Learn more about [request.is()](http://koajs.com/#req-is-types-).
 
 ## Exercise
 

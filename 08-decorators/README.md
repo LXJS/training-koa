@@ -5,12 +5,12 @@ all middleware are essentially decorators for all following middleware:
 ```js
 app.use(function* decorator(function (subapp) {
   // do something before subapp executes
-  yield* subapp
+  yield* subapp;
   // do something after subapp executes
 }))
 
 app.use(function* subapp(next) {
-  this.response.body = 'hello world'
+  this.response.body = 'hello world';
 })
 ```
 

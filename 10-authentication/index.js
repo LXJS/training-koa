@@ -27,6 +27,7 @@ app.use(function* home(next) {
 app.use(function* login() {
   if (this.request.path !== '/login') return yield* next;
   if (this.request.method === 'GET') return this.response.body = form.replace('{{csrf}}', this.csrf);
+
 })
 
 /**
@@ -37,6 +38,7 @@ app.use(function* login() {
 
 app.use(function* logout() {
   if (this.request.path !== '/logout') return yield* next;
+    
 })
 
 /**
