@@ -10,15 +10,20 @@
   },
   "repository": "LXJS/training-koa",
   "license": "MIT",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha --harmony-generators **/test.js"
+  },
   "dependencies": {
     "co": "3",
-    "mz": "0",
-    "koa": "0",
     "co-body": "0",
+    "csrf": "0",
+    "escape-html": "1",
+    "jade": "1",
+    "koa": "0",
     "koa-csrf": "1",
     "koa-session": "2",
-    "jade": "1",
-    "supertest": "0",
-    "escape-html": "1"
+    "mocha": "1",
+    "mz": "0",
+    "supertest": "0"
   }
 }

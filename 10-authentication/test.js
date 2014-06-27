@@ -76,7 +76,7 @@ describe('Authentication', function () {
         password: 'password'
       })
       .expect(303)
-      .expect('Location', '/', done))
+      .expect('Location', '/', done);
     })
 
     it('GET / should return hello world', function (done) {
