@@ -33,7 +33,7 @@ Then you must install this workshop.
 You can either fork this workshop (recommended) or clone it:
 
 ```bash
-git clone git://github.com/koajs/workshop
+git clone git://github.com/lxjs/training-koa
 cd workshop
 ```
 
