@@ -19,6 +19,10 @@
     "koa-session": "2",
     "jade": "1",
     "supertest": "0",
-    "escape-html": "1"
+    "escape-html": "1",
+    "mocha": "1"
+  },
+  "scripts": {
+    "test": "mocha --harmony-generators --reporter spec --bail */test.js"
   }
 }
