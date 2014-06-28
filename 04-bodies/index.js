@@ -12,6 +12,7 @@ var app = module.exports = koa();
 app.use(function* (next) {
   if (this.request.path !== '/stream') return yield* next;
 
+  // this.response.type =
   // this.response.body =
 });
 
@@ -22,6 +23,5 @@ app.use(function* (next) {
 app.use(function* (next) {
   if (this.request.path !== '/json') return yield* next;
 
-  // this.response.type =
   // this.response.body =
 });
