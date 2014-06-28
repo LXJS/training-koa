@@ -22,5 +22,6 @@ app.use(function* (next) {
 app.use(function* (next) {
   if (this.request.path !== '/json') return yield* next;
 
+  // this.response.type =
   // this.response.body =
 });
