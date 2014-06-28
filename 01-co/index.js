@@ -4,7 +4,9 @@ var fs = require('fs');
 /**
  * Create a yieldable version of `fs.stat()`:
  *
- *   var stats = yield fs.stat(__filename);
+ *   app.use(function* () {
+ *     var stats = yield fs.stat(__filename);
+ *   })
  *
  * Hint: you can return a yieldable.
  */
@@ -16,12 +18,17 @@ exports.stat = function (filename) {
 /**
  * Create a yieldable version of `fs.exists()`:
  *
- *   var exists = yield fs.exists(__filename);
+ *
+ *   app.use(function* () {
+ *     var exists = yield fs.exists(__filename);
+ *   })
  *
  * Note that `fs.exists()` simply wraps `fs.stat()`.
  * If `fs.stat()` does not return an error, then the file exists!
  *
  * Hint: don't use fs.exists() as it's not a proper callback.
+ * In other words, the first argument returned in its callback
+ * is not an error object, unlike node callbacks.
  */
 
 exports.exists = function (filename) {

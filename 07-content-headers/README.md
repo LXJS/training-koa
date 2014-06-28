@@ -1,6 +1,6 @@
 
 Both a request and a response could have various content headers.
-These are:
+Some of these are:
 
 - `Content-Type`
 - `Content-Length`
@@ -29,7 +29,5 @@ Learn more about [request.is()](http://koajs.com/#req-is-types-).
 ## Exercise
 
 Create an app that checks the `Content-Type` of the request.
-If it's `application/json`, simply return the body with appropriate content headers.
-Otherwise, return `ok`.
-
-> Hint: the original node `req` and `res` objects are `this.req` and `this.res`, respectively.
+If it's `application/json`, return `{message: 'hi!'}` with appropriate content headers.
+Otherwise, return `ok` as a string.

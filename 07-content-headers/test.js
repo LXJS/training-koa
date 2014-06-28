@@ -19,9 +19,8 @@ describe('Content Headers', function () {
 
   describe('when sending JSON', function () {
     it('should return that JSON', function (done) {
-      var body = JSON.stringify({
-        message: 'hi!'
-      });
+      // just a random JSON body. don't bother parsing this.
+      var body = JSON.stringify({});
 
       request(app.listen())
       .get('/')

@@ -10,6 +10,7 @@ var app = module.exports = koa();
 
 var form = fs.readFileSync(path.join(__dirname, 'form.html'), 'utf8');
 
+// adds .csrf among other properties to `this`.
 csrf(app);
 
 app.use(function* home(next) {
@@ -38,7 +39,7 @@ app.use(function* login() {
 
 app.use(function* logout() {
   if (this.request.path !== '/logout') return yield* next;
-    
+
 })
 
 /**

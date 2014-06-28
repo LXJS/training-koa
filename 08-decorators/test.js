@@ -8,6 +8,6 @@ describe('Decorators', function () {
     request(app.listen())
     .get('/')
     .expect(200)
-    .expect('this following HTML should be escaped: &lt;p&gt;hi!&lt;/p&gt;', done)
+    .expect('this following HTML should be escaped: &lt;p&gt;hi!&lt;/p&gt;', done);
   })
 })

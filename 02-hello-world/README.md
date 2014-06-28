@@ -39,4 +39,4 @@ Verify the following are correct:
 - `Content-Length`: `11`
 - `Content-Type`: `text/plain; charset=utf-8`
 
-> Hint: Koa sets these headers for you!
+> Hint: Koa sets these headers for you with strings!

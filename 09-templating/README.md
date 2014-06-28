@@ -9,4 +9,5 @@ However, in this example, we'll render using [Jade's API](https://github.com/vis
 ## Exercise
 
 Render `homepage.jade` using Jade's API.
-Note: you probably need to use Jade's asynchronous API.
+Because we use Jade's `extends` feature,
+you probably need to use Jade's asynchronous API as well as the `.filename` option.

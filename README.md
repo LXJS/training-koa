@@ -18,6 +18,12 @@ In order to prepare to this training you should/must do the following List of re
 
 You should also view this presentation: http://cdn.rawgit.com/jonathanong/koajs/master/index.html.
 
+This workshop assumes you've had experience with:
+
+- node.js
+- Express, Restify, or any similar node.js frameworks
+- Asynchronous programming - callbacks or promises
+
 ## Instructions
 
 Install node 0.11.13+. Using `nvm`, you can install it like this:
@@ -28,6 +34,8 @@ nvm use 0.11.13
 ```
 
 You can also install it directly from http://nodejs.org.
+Or using various other node version managers such as [n](https://github.com/visionmedia/n).
+If you're having trouble with this, just install it directly from nodejs.org.
 
 Then you must install this workshop.
 You can either fork this workshop (recommended) or clone it:
@@ -51,13 +59,17 @@ Read the `README` file, edit the `index.js` files, then run each test by executi
 mocha --harmony-generators test.js
 ```
 
+If you get an error message like `SyntaxError: Unexpected token *`,
+this means you didn't run the the process with `--harmony-generators`.
+
 ## Learning more than just Koa
 
 Although writing tests is not part of this workshop,
 you should still learn how they work.
 An important part of creating apps is creating the tests for it.
 Inspect the `test.js` files and see how [supertest](https://github.com/visionmedia/supertest)
-and [mocha](https://github.com/visionmedia/mocha) are used.
+and [mocha](https://github.com/visionmedia/mocha) are used,
+both of which are used in Koa, Express, and many other of TJ's work.
 You will also see what is expected from your sample apps by reading the tests.
 
 After you finish each training,

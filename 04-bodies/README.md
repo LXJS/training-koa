@@ -15,7 +15,7 @@ treating REST APIs as first-class citizens.
 app.use(function* (next) {
   this.response.body = {
     message: 'this will be sent as a JSON response!'
-  }
+  };
 })
 ```
 
@@ -34,3 +34,9 @@ app.use(function* (next) {
 ## Exercise
 
 Create an app that returns a stream when the client requests `/stream` and a JSON body when the client requests `/json`.
+
+## Bonus
+
+When setting the body of the stream, Koa can't infer the `Content-Length` of the
+body. Set the `Content-Length` header yourself using `this.response.length=`
+and the "yieldable" version of `fs` you've created in exercise 1.

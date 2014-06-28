@@ -6,6 +6,7 @@ var app = module.exports = koa();
 
 /**
  * Create the `GET /stream` route that streams this file.
+ * In node.js, the current file is available as a variable `__filename`.
  */
 
 app.use(function* (next) {

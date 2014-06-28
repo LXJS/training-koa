@@ -15,6 +15,8 @@ app.use(function* subapp(next) {
 ```
 
 For more information on decorators, look up "decorator functions" or the "decorator pattern".
+I would add a link to a good resource, but I don't think any of the ones
+I've found yet are that good.
 
 ## Exercise
 

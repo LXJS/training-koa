@@ -7,6 +7,7 @@ Unlike, Express, error handlers are simply decorators that you add to the __top_
 ```js
 app.use(function* errorHandler(next) {
   try {
+    // catch all downstream errors
     yield next;
   } catch (err) {
     // do something with the error
@@ -14,15 +15,21 @@ app.use(function* errorHandler(next) {
 })
 
 app.use(function* () {
+  // throw an error downstream
   throw new Error('boom!');
 })
 ```
 
-Koa also emits all errors uncaught by any middleware to `app.on('error', function (err, context) {})`.
+Each Koa `app` is an [EventEmitter](http://nodejs.org/api/events.html#events_class_events_eventemitter) instance.
+All errors uncaught by any middleware to `app.on('error', function (err, context) {})`.
 This is useful for logging.
-However, if you create your own error handler,
+However, if you create your own error handler (i.e. catching it),
 you will have to manually emit these events yourself.
-The nice thing about this is that you can now decide which errors are important enough to delegate to `app`.
+
+In a real app, you would only want to `app.emit('error', err, this)`
+unknown errors. Client errors, such as validation errors,
+don't need to be logged.
+Using an error handler also allows you to create your own error pages.
 
 ## Exercise
 

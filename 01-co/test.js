@@ -13,6 +13,8 @@ describe('.stats()', function () {
   it('should throw on a nonexistent file', co(function* () {
     try {
       yield fs.stat(__filename + 'lkjaslkdjflaksdfasdf');
+      // the above expression should throw,
+      // so this error will never be thrown
       throw new Error('nope');
     } catch (err) {
       assert(err.message !== 'nope');

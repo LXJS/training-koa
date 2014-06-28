@@ -4,15 +4,19 @@ Without a router, routing in Koa can be done by using `this.request.path` and `y
 To check if the request matches a specific path:
 
 ```js
-if (this.request.path === '/') {
+app.use(function* () {
+  if (this.request.path === '/') {
 
-}
+  }
+})
 ```
 
 To skip this middleware:
 
 ```js
-if (skip) return yield next;
+app.use(function* () {
+  if (skip) return yield next;
+})
 ```
 
 This is very similar to Express' `next()` call.
@@ -21,9 +25,12 @@ Combining this together,
 you can route paths like this:
 
 ```js
-if (this.request.path !== '/') return yield next;
+app.use(function* () {
+  // skip the rest of the code if the route does not match
+  if (this.request.path !== '/') return yield next;
 
-this.response.body = 'we are at home!';
+  this.response.body = 'we are at home!';
+})
 ```
 
 By `return`ing early,
@@ -51,7 +58,8 @@ Create an app that returns the following responses from the following routes:
 - `/404` - `page not found`
 - `/500` - `internal server error`.
 
-Each route should be its own middleware.
+In a real app, having each route as its own middleware is more ideal
+as it allows for easier refactoring.
 
 ## Learn More
 
