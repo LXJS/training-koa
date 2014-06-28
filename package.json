@@ -12,10 +12,10 @@
   "license": "MIT",
   "dependencies": {
     "co": "3",
-    "mz": "0",
+    "mz": "1",
     "koa": "0",
     "co-body": "0",
-    "koa-csrf": "1",
+    "koa-csrf": "2",
     "koa-session": "2",
     "jade": "1",
     "supertest": "0",

@@ -1,9 +1,9 @@
 
 var fs = require('fs');
 var koa = require('koa');
-var csrf = require('csrf');
 var path = require('path');
 var parse = require('co-body');
+var csrf = require('koa-csrf');
 var session = require('koa-session');
 
 var app = module.exports = koa();
@@ -12,6 +12,12 @@ var form = fs.readFileSync(path.join(__dirname, 'form.html'), 'utf8');
 
 // adds .csrf among other properties to `this`.
 csrf(app);
+
+// use koa-session somewhere at the top of the app
+app.use(session());
+
+// we need to set the `.keys` for signed cookies and the cookie-session module
+app.keys = ['secret1', 'secret2', 'secret3'];
 
 app.use(function* home(next) {
   if (this.request.path !== '/') return yield next;
@@ -25,7 +31,7 @@ app.use(function* home(next) {
  * If successful, the logged in user should be redirected to `/`.
  */
 
-app.use(function* login() {
+app.use(function* login(next) {
   if (this.request.path !== '/login') return yield* next;
   if (this.request.method === 'GET') return this.response.body = form.replace('{{csrf}}', this.csrf);
 
@@ -37,7 +43,7 @@ app.use(function* login() {
  * let's not consider that an error and rather a "success".
  */
 
-app.use(function* logout() {
+app.use(function* logout(next) {
   if (this.request.path !== '/logout') return yield* next;
 
 })

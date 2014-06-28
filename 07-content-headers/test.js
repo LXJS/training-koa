@@ -29,7 +29,7 @@ describe('Content Headers', function () {
       .send(body)
       .expect(200)
       .expect('Content-Type', /application\/json/)
-      .expect('Content-Length', Buffer.byteLength(body))
+      .expect('Content-Length', 17)
       .end(function (err, res) {
         if (err) return done(err);
 

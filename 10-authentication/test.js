@@ -14,9 +14,9 @@ describe('Authentication', function () {
     })
 
     it('GET /login should 200', function (done) {
-      request.get('/')
+      request.get('/login')
       .expect('Content-Type', /text\/html/)
-      .expect('<form', done);
+      .expect(/^<form/, done);
     })
 
     it('GET /logout should 303', function (done) {
@@ -31,10 +31,8 @@ describe('Authentication', function () {
       .expect(200, function (err, res) {
         if (err) return done(err);
 
-        var html = res.body.text;
-
+        var html = res.text;
         csrf = /name="_csrf" value="([^"]+)"/.exec(html)[1];
-        assert(csrf !== 'csrf');
         done();
       })
     })
@@ -42,8 +40,8 @@ describe('Authentication', function () {
     it('POST /login should 403 without a CSRF token', function (done) {
       request.post('/login')
       .send({
-        username: username,
-        password: password
+        username: 'username',
+        password: 'password'
       })
       .expect(403, done);
     })
@@ -51,8 +49,8 @@ describe('Authentication', function () {
     it('POST /login should 403 with an invalid CSRF token', function (done) {
       request.post('/login')
       .send({
-        username: username,
-        password: password,
+        username: 'username',
+        password: 'password',
         _csrf: 'lkjalksdjfasdf'
       })
       .expect(403, done);
