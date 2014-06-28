@@ -9,5 +9,5 @@ var app = module.exports = koa();
  */
 
 app.use(function* () {
-
+  this.response.body = 'hello world';
 });

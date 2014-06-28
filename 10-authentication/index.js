@@ -35,6 +35,18 @@ app.use(function* login(next) {
   if (this.request.path !== '/login') return yield* next;
   if (this.request.method === 'GET') return this.response.body = form.replace('{{csrf}}', this.csrf);
 
+  // parse the request body
+  var body = parse(this);
+  // check to make sure the CSRF token is valid
+  this.assertCSRF(body);
+
+  if (body.username !== 'username' || body.password !== 'password') {
+    this.throw(400, 'invalid authentication parameters');
+  }
+
+  this.session.authenticated = true;
+  this.response.status = 303;
+  this.response.redirect('/');
 })
 
 /**
@@ -46,6 +58,9 @@ app.use(function* login(next) {
 app.use(function* logout(next) {
   if (this.request.path !== '/logout') return yield* next;
 
+  delete this.session.authenticated;
+  this.response.status = 303;
+  this.response.redirect('/login');
 })
 
 /**

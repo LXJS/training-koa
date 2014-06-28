@@ -6,7 +6,8 @@ var app = module.exports = koa();
 
 app.use(function* (next) {
   yield next;
-  // add some logic here!
+  
+  this.response.body = escape(this.response.body);
 })
 
 app.use(function* body() {

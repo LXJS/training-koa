@@ -1,6 +1,7 @@
 
 var fs = require('fs');
 var koa = require('koa');
+var path = require('path');
 
 var app = module.exports = koa();
 
@@ -12,7 +13,8 @@ var app = module.exports = koa();
 app.use(function* (next) {
   if (this.request.path !== '/stream') return yield* next;
 
-  // this.response.body =
+  this.response.type = path.extname(__filename);
+  this.response.body = fs.createReadStream(__filename);
 });
 
 /**
@@ -22,5 +24,7 @@ app.use(function* (next) {
 app.use(function* (next) {
   if (this.request.path !== '/json') return yield* next;
 
-  // this.response.body =
+  this.response.body = {
+    message: 'hello world'
+  };
 });
