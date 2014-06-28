@@ -5,7 +5,7 @@ var fs = require('fs');
  * Create a yieldable version of `fs.stat()`:
  *
  *   app.use(function* () {
- *     var stats = yield fs.stat(__filename);
+ *     var stats = yield exports.stat(__filename);
  *   })
  *
  * Hint: you can return a yieldable.
@@ -20,7 +20,7 @@ exports.stat = function (filename) {
  *
  *
  *   app.use(function* () {
- *     var exists = yield fs.exists(__filename);
+ *     var exists = yield exports.exists(__filename);
  *   })
  *
  * Note that `fs.exists()` simply wraps `fs.stat()`.

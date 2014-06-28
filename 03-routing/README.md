@@ -4,7 +4,7 @@ Without a router, routing in Koa can be done by using `this.request.path` and `y
 To check if the request matches a specific path:
 
 ```js
-app.use(function* () {
+app.use(function* (next) {
   if (this.request.path === '/') {
 
   }
@@ -14,7 +14,7 @@ app.use(function* () {
 To skip this middleware:
 
 ```js
-app.use(function* () {
+app.use(function* (next) {
   if (skip) return yield next;
 })
 ```
@@ -25,7 +25,7 @@ Combining this together,
 you can route paths like this:
 
 ```js
-app.use(function* () {
+app.use(function* (next) {
   // skip the rest of the code if the route does not match
   if (this.request.path !== '/') return yield next;
 
