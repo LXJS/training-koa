@@ -17,6 +17,5 @@ app.use(function* () {
     this.response.set('Content-Encoding', 'gzip');
   } else {
     this.response.body = 'hello world';
-    this.response.set('Content-Encoding', 'identity');
   }
 });
