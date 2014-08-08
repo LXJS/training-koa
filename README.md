@@ -1,3 +1,5 @@
+THIS WORKSHOP HAS MOVED TO https://github.com/koajs/workshop
+
 # koa
 
 In this workshop, you will learn the basics of [koa](https://github.com/koajs/koa), [Express'](https://github.com/visionmedia/express) spiritual successor.
