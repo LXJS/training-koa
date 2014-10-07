@@ -1,6 +1,7 @@
 THIS WORKSHOP HAS MOVED TO https://github.com/koajs/workshop
 
 # koa
+[![Gitter](https://badges-beta.gitter.im/Join Chat.svg)](https://beta.gitter.im/LXJS/training-koa?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 In this workshop, you will learn the basics of [koa](https://github.com/koajs/koa), [Express'](https://github.com/visionmedia/express) spiritual successor.
 
